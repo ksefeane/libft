@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
+# include "get_next_line.h"
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *b, size_t n);
@@ -89,4 +90,6 @@ int					ft_isval(int c, int a, int b);
 int					ft_nwords(char const *s, char c);
 int					*ft_nalpha(char const *s, char c);
 int					ft_space(const char *s, int n);
+
+int					ft_reader(const int fd, int n);
 #endif
